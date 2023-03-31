@@ -93,7 +93,15 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
+.carousel-inner{
+    width: 400px;
+    height: 60%;
+    /*
+    opacity: .8;
+    */
+    transition: opacity .7s ease;
+    
+}
 hr {
   margin: 1rem 0;
   color: inherit;
