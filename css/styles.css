@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+
 @charset "UTF-8";
 :root {
 
@@ -119,6 +121,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 .text-justify{
   text-align: justify;
+  font-size: 16px;
+  font-family: "Cuprum", sans-serif;
 }
 .logo{
     width: 5%;
