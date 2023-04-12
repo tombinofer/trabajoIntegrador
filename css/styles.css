@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap');
 
 @charset "UTF-8";
 :root {
@@ -107,9 +108,9 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: #F0C27B;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #d2d0ba;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5e747f, #d2d0ba);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5e747f, #d2d0ba); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 #contenedorClima{
@@ -127,15 +128,15 @@ body {
   height: 200px;
 }
 #caja1{
-  background-color: rgba(0, 0, 0, 0.767);
+  background-color: #413E44;
   color:azure;
 }
 #caja2{
-  background-color: darkslateblue;
+  background-color: #683E82;
   color:azure;
 }
 #caja3{
-  background-color: #2AB2EA;
+  background-color: #83161D;
   color:azure;
 }
 data-sb-validations
@@ -2302,7 +2303,7 @@ textarea.form-control-lg {
   background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
   -webkit-appearance: none;
-     -moz-appearance: none;
+  -moz-appearance: none;
           appearance: none;
   -webkit-print-color-adjust: exact;
           print-color-adjust: exact;
@@ -2400,7 +2401,7 @@ textarea.form-control-lg {
   padding: 0;
   background-color: transparent;
   -webkit-appearance: none;
-     -moz-appearance: none;
+  -moz-appearance: none;
           appearance: none;
 }
 .form-range:focus {
@@ -3695,11 +3696,13 @@ textarea.form-control-lg {
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);
   text-decoration: none;
+  font-family: 'Sarabun', sans-serif;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
+    font-family: 'Sarabun', sans-serif;
   }
 }
 .nav-link:hover, .nav-link:focus {
@@ -3974,6 +3977,7 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 768px) {
+
   .navbar-expand-md {
     flex-wrap: nowrap;
     justify-content: flex-start;
