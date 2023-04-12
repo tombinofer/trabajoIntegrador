@@ -18,7 +18,7 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container px-5">
-                <a class="navbar-brand" href="index.html"><img class="logo" src="/img/logo-V-blanco.svg" alt="Logo de Empresa"></a>
+                <a class="navbar-brand" href="index.html"><img class="logo" src="/img/logo-V-color.svg" alt="Logo de Empresa"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -55,20 +55,21 @@
                 <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <div id="contenedor" class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div id="caja1">
-                    <h1 id="temperatura-valor"></h1>
-                    <h1 id="temperatura-descripcion"></h1>
+            <div id="contenedorTotal" class="container-fluid">
+                <div id="contenedorClima">
+                    <div id="caja1" class="rounded">
+                        <h1 id="temperatura-valor"></h1>
+                        <h1 id="temperatura-descripcion"></h1>
+                    </div>
+                    <div id="caja2" class="rounded">
+                        <h2 id="ubicacion"></h2>
+                        <img id="icono-animado" src="" alt="" height="128" width="128">
+                    </div>
+                    <div id="caja3" class="rounded">
+                        <h3 id="viento">Vel. del Viento</h3>
+                        <h1 id="viento-velocidad"></h1>
+                    </div>
                 </div>
-                <div id="caja2">
-                    <h2 id="ubicacion"></h2>
-                    <img id="icono-animado" src="" alt="" height="128" width="128">
-                </div>
-                <div id="caja3">
-                    <h3>Vel. del Viento</h3>
-                    <h1 id="viento-velocidad"></h1>
-                </div>
-
             </div>
             <div class="row gx-4 gx-lg-5 align-items-center my-5">              
                 <div class="col-lg-5">
