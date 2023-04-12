@@ -34,6 +34,42 @@
         <!-- Page Content-->
         <div class="container px-4 px-lg-5 pt-4 mt-4">
             <!-- Heading Row-->
+            <div id="carruselImg" class="carousel slide carousel-fade altura" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="/img/1.jpeg" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="/img/2.jpeg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="/img/3.jpeg" class="d-block w-100" alt="Imagen 3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselImg" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselImg" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div id="contenedor" class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div id="caja1">
+                    <h1 id="temperatura-valor"></h1>
+                    <h1 id="temperatura-descripcion"></h1>
+                </div>
+                <div id="caja2">
+                    <h2 id="ubicacion"></h2>
+                    <img id="icono-animado" src="" alt="" height="128" width="128">
+                </div>
+                <div id="caja3">
+                    <h3>Vel. del Viento</h3>
+                    <h1 id="viento-velocidad"></h1>
+                </div>
+
+            </div>
             <div class="row gx-4 gx-lg-5 align-items-center my-5">              
                 <div class="col-lg-5">
                     <h1 class="font-weight-light">Viaja a donde quieras!</h1>
@@ -41,10 +77,10 @@
                         Su base está a 2.240 metros de altura sobre el nivel del mar y su cumbre a 3.430 metros. 
                         Está ubicado a 80 km de Malargüe, 200 km de San Rafael, 342 km de Mendoza, 1.200 km de Buenos Aires, 800 km de Córdoba y 1.000 km de Rosario. 
                         </p>
-                    <a class="btn btn-primary" href="#!">HACER</a>
+                    <a class="btn btn-primary" href="contacto.html">Reservar</a>
                 </div>
                 <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="/img/playa.jpeg" alt="Imagen paisaje" /></div>
-            </div>
+            </div>  
             <!-- Call to Action-->
             <div class="card text-white bg-secondary my-5 py-4 text-center" id="tarjeta">
                 <div class="card-body"><p class="text-white m-0">De punta a punta, recorre toda la Argentina a bajo costo!</p></div>
@@ -81,27 +117,7 @@
             </div>
         </div>
 
-        <div id="carruselImg" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item" data-bs-interval="1000">
-                <img src="/img/1.jpeg" class="d-block w-100" alt="Imagen 1">
-              </div>
-              <div class="carousel-item active" data-bs-interval="1000">
-                <img src="/img/2.jpeg" class="d-block w-100" alt="Imagen 2">
-              </div>
-              <div class="carousel-item" data-bs-interval="1000">
-                <img src="/img/3.jpeg" class="d-block w-100" alt="Imagen 3">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carruselImg" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carruselImg" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        
         
         <footer class="py-5 bg-dark">
             <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
