@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,600&display=swap');
 
 @charset "UTF-8";
 :root {
@@ -109,8 +110,8 @@ body {
   flex-direction: column;
   align-items: center;
   background: #d2d0ba;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #5e747f, #d2d0ba);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #5e747f, #d2d0ba); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #F49B00, #d2d0ba);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F49B00, #d2d0ba); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 #contenedorClima{
@@ -139,8 +140,19 @@ body {
   background-color: #83161D;
   color:azure;
 }
-data-sb-validations
+.h1-central{
+  font-family: 'Sarabun', sans-serif;;
+}
 
+.tarjeta-index{
+  font-family: inherit, sans-serif;
+  font-size: 25px;
+  color: #cf972a;
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 /* Se cambian las especificaciones del carrusel*/
 .altura{
   height: 10%;
