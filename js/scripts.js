@@ -142,3 +142,43 @@ window.addEventListener('load',()=> {
 function masInfo() {
     window.location.href = "contacto.html";
 }
+
+
+
+function validarDatos(){
+//FORMULARIO VALIDACION
+
+let nombre = $("#name").val();
+//let correo = document.getElementById('email');
+var telefono = document.getElementById('phone');
+var mensaje = document.getElementById('message');
+var error = document.getElementById('error');
+error.style.color = "red";
+
+if (nombre == ""){
+    $("#msj-name").text("Completar el Nombre y Apellido");
+} 
+
+const expresiones = {
+	name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	phone: /^\d{7,14}$/ // 7 a 14 numeros.
+}
+
+var expresion = /\w+@\w+\.+[a-z]/;
+var valContra =  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+
+
+
+}
+
+
+function ValidaSoloNumeros() {
+    if ((event.keyCode < 48) || (event.keyCode > 57)) 
+    event.returnValue = false;
+}
+
+function txNombres() {
+    if ((event.keyCode != 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122))
+    event.returnValue = false;
+}

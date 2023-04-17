@@ -18,8 +18,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
     <body>
+        <script>
+            $(document).ready(function(){
+
+            });
+        </script>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
             <div class="container px-5">
@@ -51,11 +57,12 @@
                     <div class="col-lg-6">
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form id="formulario" data-sb-form-api-token="API_TOKEN">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" id="name" type="text" onkeypress="txNombres()" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Nombre y Apellido</label>
+                                <label id="msj-name"></label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Nombre requerido.</div>
                             </div>
                             <!-- Email address input-->
@@ -67,7 +74,7 @@
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="number" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <input class="form-control" id="phone" type="number" onkeypress="ValidaSoloNumeros()" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Teléfono</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">Un teléfono es requerido.</div>
                             </div>
@@ -102,7 +109,12 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-warning btn-lg disabled" id="submitButton" type="submit">Enviar</button></div>
+                            <div class="d-grid">
+                                <button class="btn btn-warning btn-lg disabled" id="submitButton" type="button" onclick="validarDatos()">Enviar</button>
+                            </div>
+                            
+                                
+                            </div>
                         </form>
                     </div>
                 </div>
