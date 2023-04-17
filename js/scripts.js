@@ -138,4 +138,7 @@ window.addEventListener('load',()=> {
     $lightbox.fadeOut('fast');
     });
 });
-}());
+});
+function masInfo() {
+    window.location.href = "contacto.html";
+}

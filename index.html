@@ -20,6 +20,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,600&display=swap" rel="stylesheet">  
         <script type="text/javascript" src="js/scripts.js"></script>
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@1,200&family=Rubik:ital,wght@1,600&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -34,6 +38,7 @@
                         <li class="nav-item"><a class="nav-link" href="#tarjeta">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="/galeria.html">Galería</a></li>
                         <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
+                        <li><a href="https://www.facebook.com/pages/T%C3%ADa-Clara-dulces-artesanales/1473508252899702" target="_blank" class="icon-facebook"></a></li>
                     </ul>
                 </div>
             </div>
@@ -78,16 +83,18 @@
                     </div>
                 </div>
             </div>
-            <div class="row gx-4 gx-lg-5 align-items-center my-5">              
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">   
+            <div id="contenedor-servicios">
                 <div class="col-lg-5">
                     <h1 class="font-weight-light h1-central">¡Viaja a donde quieras!</h1>
-                    <p class="text-justify">Las Cataratas del Iguazú son una de las maravillas naturales del mundo. 
-                        Enclavadas en la frontera entre Argentina y Brasil, los saltos de agua llegan a alcanzar una
-                        altura de 80 metros, lo que lo transforma en un sitio de visita obligada. 
-                        </p>
+                    <p class="text-justify">Descubre la belleza de nuestro pais de norte a sur. Desde la imponente Cordillera de los Andes hasta las playas de la Patagonia, pasando por la selva misionera y las cataratas del Iguazú, Argentina tiene mucho para ofrecer. Conoce nuestras ciudades historicas como Buenos Aires, Salta y Cordoba, y probá la deliciosa gastronomia local en cada lugar que visites.
+            </p>
                     <a id="color-dominante" class="btn btn-warning" href="contacto.html">Reservar</a>
+                    <br>
                 </div>
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="/img/cataratas.png" alt="Imagen paisaje" /></div>
+            <!-- Heading Row-->
+            
+            </div>
             </div>  
             <!-- Call to Action-->
             <div class="card text-white bg-secondary my-5 py-4 text-center" id="tarjeta">
@@ -98,37 +105,64 @@
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Primera tarjeta</h2>
-                            <p class="card-text text-justify"">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            <h2 class="tarjetas-fuente card-titulo">Buenos Aires</h2>
+                            <p class="card-text text-justify"">Buenos Aires: La capital de Argentina es uno de los destinos turísticos más populares del país. Conocida como "La Reina del Plata", Buenos Aires es famosa por su arquitectura colonial española, sus plazas y parques hermosos, sus mercados callejeros y su vibrante vida nocturna. Los visitantes pueden disfrutar de una variedad de actividades, desde explorar el barrio histórico de San Telmo hasta asistir a un espectáculo de tango en La Boca o disfrutar de la gastronomía local.</p>
+                            <img class="img-fluid" src=img/laboca.jpg> 
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!" onclick="masInfo()"> Contáctanos </a></div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Segunda tarjeta</h2>
-                            <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                            <h2 class="tarjetas-fuente card-titulo">Bariloche</h2>
+                            <p class="card-text text-justify">Bariloche: Esta ciudad de montaña situada en la Patagonia es un destino popular durante todo el año. En invierno, los visitantes pueden disfrutar de la nieve y los deportes de invierno como el esquí y el snowboard en el Cerro Catedral. En verano, las actividades incluyen senderismo, pesca, kayak y navegación en los lagos cristalinos de la zona. Además, Bariloche es conocida por su deliciosa producción de chocolate, ¡así que asegúrate de probar algunas delicias locales mientras estás allí!.</p>
+                        <img class="img-fluid" src=img/bariloche.jpg>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!" onclick="masInfo()"> Contáctanos </a></div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Tercera tarjeta</h2>
-                            <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            <h2 class="tarjetas-fuente card-titulo">Iguazú</h2>
+                            <p class="card-text text-justify">Iguazú: Las Cataratas del Iguazú son una de las maravillas naturales más impresionantes de Sudamérica y se encuentran en la frontera entre Argentina y Brasil. El Parque Nacional Iguazú ofrece vistas impresionantes de las cataratas, que consisten en más de 275 cascadas en cascada. Los visitantes pueden explorar la selva tropical que rodea las cataratas y ver una gran variedad de vida silvestre, incluyendo tucanes, monos, jaguares y caimanes. </p>
+                        <img class="img-fluid" src=img/cataratas.png>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!" onclick="masInfo()"> Contáctanos </a></div>
                     </div>
                 </div>
             </div>
+            </div>
         </div>
-
-        
-        
-        <footer class="py-5 bg-dark">
-            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+<!--::::Pie de Pagina::::::-->
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="img/logo-V-color.svg" alt="Logo de la Empresa">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>Viajar.com  </h2>
+                    <p>!TE HACE CONOCER EL PAIS!</p>
+                    <p>Disfrutá en familia.</p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="https://www.facebook.com/mejoresviajesok/?locale=es_LA" target="_blank" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/haciendoviajes/?hl=es" target="_blank" class="fa fa-instagram"></a>
+                        <a href="https://twitter.com/harrylpg?lang=es" target="_blank" class="fa fa-twitter"></a>
+                        <a href="https://www.youtube.com/watch?v=40Nqrze_Dxc " target="_blank" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2023 <b> Grupo 10 </b> - Todos los Derechos Reservados.</small>
+            </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
