@@ -20,6 +20,7 @@ const consultarDatos = async () =>{
     }
 */
 window.addEventListener('load',()=> {
+    //se crean variables y se obtiene informacion!
     let lat;
     let lon;
 
@@ -46,19 +47,25 @@ window.addEventListener('load',()=> {
             fetch(url)
                 .then(response => {return response.json() })
                 .then(data =>{
+                    
                     console.log(data.main.temp);
+                    //Se obtiene temperatura de data y se redondea
                     let temp = Math.round(data.main.temp);
                     temperaturaValor.textContent = `${temp} C°`;
                     console.log(data.weather[0].description);
+                    //Se obtiene la descripcion de data y se colocar mayuscula.
                     let desc = data.weather[0].description;
                     temperaturaDescripcion.textContent = desc.toUpperCase();
+                    //Se obtiene la ubicacion.
                     ubicacion.textContent = data.name;
+                    //Se obtiene la velocidad del viento de data.
                     vientoVelocidad.textContent = `${data.wind.speed} m/s`;
                     //iconos estaticos
                     //let iconCode = data.weather[0].icon;
                     //const urlIcon = `https://openweathermap.org/img/wn/${iconCode}.png`;
                     
                     //iconos animados
+                    //SEGUN LO OPCION DEL JSON SERA EL ICONO MOSTRADO.
                     switch(data.weather[0].main){
                         case 'Thunderstorm':
                             iconoAnimado.src='/icons/animated/thunder.svg'
@@ -102,6 +109,11 @@ window.addEventListener('load',()=> {
     }
 })
 
+
+
+
+
+
 // Create a lightbox
 (function() {
     var $lightbox = $("<div class='lightbox'></div>");
@@ -142,6 +154,12 @@ window.addEventListener('load',()=> {
 function masInfo() {
     window.location.href = "contacto.html";
 }
+
+
+
+
+
+
 
 
 
