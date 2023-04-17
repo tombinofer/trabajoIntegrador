@@ -67,9 +67,19 @@
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <input class="form-control" id="phone" type="number" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Teléfono</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">Un teléfono es requerido.</div>
+                            </div>
+                            <!-- Date input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="date" type="date" placeholder="" data-sb-validations="required" />
+                                <label for="date">Fecha de partida</label>
+                                <div class="invalid-feedback" data-sb-feedback="date:required">Una fecha es requerida.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="date" type="date" placeholder="" data-sb-validations="" />
+                                <label for="date">Fecha de regreso</label>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
