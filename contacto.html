@@ -22,8 +22,11 @@
     </head>
     <body>
         <script>
-            $(document).ready(function(){
-
+            document.addEventListener('DOMContentLoaded', function(){
+            let formulario = document.getElementById('formulario');
+                formulario.addEventListener('submit', function() {
+                    formulario.reset();
+                });
             });
         </script>
         <!-- Responsive navbar-->
@@ -81,14 +84,10 @@
                             <!-- Date input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="date" type="date" placeholder="" data-sb-validations="required" />
-                                <label for="date">Fecha de partida</label>
+                                <label for="date">Fecha de partida aproximada</label>
                                 <div class="invalid-feedback" data-sb-feedback="date:required">Una fecha es requerida.</div>
                             </div>
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="date2" type="date" placeholder="" data-sb-validations="" />
-                                <label for="date">Fecha de regreso</label>
-                                <div class="invalid-feedback" data-sb-feedback="date:required">Una fecha es requerida.</div>
-                            </div>
+                
                             <!-- Message input-->
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
@@ -111,7 +110,7 @@
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
                             <div class="d-grid">
-                                <button class="btn btn-warning btn-lg disabled" id="submitButton" type="button" onclick="validarDatos()">Enviar</button>
+                                <button class="btn btn-warning btn-lg disabled" id="submitButton">Enviar</button>
                             </div>
                             
                                 

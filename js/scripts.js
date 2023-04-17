@@ -160,17 +160,14 @@ function masInfo() {
 
 
 
-
-
-
 function validarDatos(){
 //FORMULARIO VALIDACION
 
 let nombre = $("#name").val();
 //let correo = document.getElementById('email');
-var telefono = document.getElementById('phone');
-var mensaje = document.getElementById('message');
-var error = document.getElementById('error');
+let telefono = document.getElementById('phone');
+let mensaje = document.getElementById('message');
+let error = document.getElementById('error');
 error.style.color = "red";
 
 if (nombre == ""){
@@ -185,10 +182,11 @@ const expresiones = {
 
 var expresion = /\w+@\w+\.+[a-z]/;
 var valContra =  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
-
-
-
 }
+
+
+
+
 
 
 function ValidaSoloNumeros() {
@@ -200,3 +198,10 @@ function txNombres() {
     if ((event.keyCode != 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122))
     event.returnValue = false;
 }
+
+document.addEventListener('DOMContentLoaded', function(){
+    let formulario = document.getElementById('formulario');
+        formulario.addEventListener('submit', function() {
+            formulario.reset();
+        });
+    });
